@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view />
-    <h1>果仁云用户登录界面</h1>
   </div>
 </template>
 

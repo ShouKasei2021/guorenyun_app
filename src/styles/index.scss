@@ -1,0 +1,13 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as mix;
+@use 'base/reset';
+@use 'components';
+@use 'views';
+@use 'components/button';
+
+// 全局样式
+html, body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $text-color;
+}

@@ -5,7 +5,7 @@ import { createPinia } from 'pinia';
 import './plugins/element-plus';
 import './plugins/echarts';
 import './plugins/leaflet';
-import './assets/style.css';
+import './styles/index.scss'
 
 const app = createApp(App);
 
