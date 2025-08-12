@@ -1,0 +1,14 @@
+@use '@/styles/base/variables' as *;
+@use '@/styles/base/mixins' as mix;
+
+.register-link {
+  color: $primary-color;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 16px;
+  text-decoration: underline;
+  transition: color 0.2s;
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}

@@ -26,7 +26,10 @@
           </label>
           <a href="#" class="forgot-password">忘记密码？</a>
         </div>
-        <button class="login-button">登录</button>
+        <div class="login-actions">
+          <a class="register-link" @click="goToRegister">立即注册</a>
+          <button class="g-button g-button--primary">登录</button>
+        </div>
       </form>
     </div>
   </div>
@@ -34,6 +37,11 @@
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
+import { useRouter } from 'vue-router'
+const router = useRouter()
+function goToRegister() {
+    router.push('/register')
+}
 
 export default defineComponent({
   name: 'Login',
@@ -59,4 +67,5 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @use '@/styles/views/login' as *; // 直接引用 _login.scss 文件
+
 </style>
